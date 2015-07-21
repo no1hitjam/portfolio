@@ -63,7 +63,7 @@
         </label>
       </div>-->
       <br />
-      <div class="art-content">
+      <div class="art-content" id="art-content-container">
         <img src="content/rubicon_demo.png" class="img-responsive"><br />
         <img src="content/spiderqueen_demo.gif" class="img-responsive"><br />
         <img src="content/town_portfolio.png" class="img-responsive"><br />
@@ -73,7 +73,7 @@
     <!-- footer with thumbnails -->
     <div class="navbar navbar-default navbar-fixed-bottom navbar-footer" role="navigation">
       <div class="pull-left">
-        <table class="lango-thumb">
+        <table class="lango-thumb" id="lango-thumb-table">
           <td class="lango-thumb">     
             <div width="50px" height="50px" overflow="hidden">
               <img src="content/rubicon_demo.png" width="100%" height="100%"/>
@@ -99,17 +99,35 @@
     <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-    <!-- <script>
-        var xmlDoc = loadXML('./content/art.xml');
-        alert('maintest');
+    <script>
+        var xmlDoc = loadXML('art.xml');
         var xmlNodes = xmlDoc.documentElement.childNodes;
-        var container = document.getElementById('container');
+        var artContent = document.getElementById('art-content-container');
         for (i = 0; i < xmlNodes.length; i++)
         {
           // construct list item
-          container.innerHTML += '<img src=content/art/"' + xmlNodes.getAttribute('name') + '" class="img-responsive" /><br />';
+          var image = document.createElement("img");
+          image.setAttribute('src', 'content/' + xmlNodes.name);
+          image.setAttribute('class', 'img-responsive');
+          
+          artContent.appendChild(image);
+          artContent.appendChild(document.createElement('br'));
+          //container.innerHTML += '<img src=content/art/"' + xmlNodes.getAttribute('name') + '" class="img-responsive" /><br />';
+          
+          var imageThumb = document.createElement('td');
+          imageThumb.setAttribute('class', 'lango-thumb');
+          var imageThumbDiv = document.createElement('div');
+          imageThumbDiv.setAttribute('width', '50px');
+          imageThumbDiv.setAttribute('height', '50px');
+          imageThumbDiv.setAttribute('overflow', 'hidden');
+          imageThumb.appendChild(imageThumbDiv);
+          var imageThumbImg = document.createElement('img');
+          imageThumbImg.setAttribute('src', 'content/' + xmlNodes.name);
+          imageThumbImg.setAttribute('width', '100%');
+          imageThumbImg.setAttribute('height', '100%');
+          document.getElementById('lango-thumb-table').appendChild(imageThumb);
         }
         alert('test');
-    </script> -->
+    </script>
   </body>
 </html>
