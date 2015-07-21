@@ -103,13 +103,18 @@
         var xmlDoc = loadXML('art.xml');
         var xmlNodes = xmlDoc.documentElement.childNodes;
         var artContent = document.getElementById('art-content-container');
-        for (i = 0; i < xmlNodes.length; i++)
+        
+        var imageFileNames = [
+          'rubicon_demo.png',
+          'spiderqueen_demo.gif',
+          'town_portfolio.png'
+        ]
+        
+        for (i = 0; i < imageFileNames.length; i++)
         {
-          var imageName = xmlNodes[i].getElementsByTagName('name')[0];
-          alert(imageName);
           // construct list item
           var image = document.createElement("img");
-          image.setAttribute('src', 'content/' + imageName);
+          image.setAttribute('src', 'content/' + imageFileNames[i]);
           image.setAttribute('class', 'img-responsive');
           
           artContent.appendChild(image);
@@ -124,7 +129,7 @@
           imageThumbDiv.setAttribute('overflow', 'hidden');
           imageThumb.appendChild(imageThumbDiv);
           var imageThumbImg = document.createElement('img');
-          imageThumbImg.setAttribute('src', 'content/' + imageName);
+          imageThumbImg.setAttribute('src', 'content/' + imageFileNames[i]);
           imageThumbImg.setAttribute('width', '100%');
           imageThumbImg.setAttribute('height', '100%');
           document.getElementById('lango-thumb-table').appendChild(imageThumb);
