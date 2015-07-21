@@ -16,6 +16,13 @@ h3 {
   font-size: 22px;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
 .lango-thumb table {
   width: 50px;
   height: 50px;

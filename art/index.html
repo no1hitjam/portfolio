@@ -76,7 +76,41 @@
       </div>
     </div>
     
-    
+    <script src="art-data.js"></script>
+    <script>
+        var artContent = document.getElementById('art-content-container');
+        var artThumbTable = document.getElementById('lango-thumb-table');
+
+        for (var i = 0; i < imageFileNames.length; i++)
+        {
+          var image = document.createElement("img");
+          image.setAttribute('src', 'content/' + imageFileNames[i]);
+          image.setAttribute('class', 'img-responsive');
+          var imageAnchor = document.createElement('a');
+          imageAnchor.setAttribute('name', imageFileNames[i]);
+          imageAnchor.setAttribute('class', 'anchor');
+          
+          artContent.appendChild(imageAnchor);
+          artContent.appendChild(image);
+          artContent.appendChild(document.createElement('br'));
+
+          var imageThumb = document.createElement('td');
+          imageThumb.setAttribute('class', 'lango-thumb');
+          var imageThumbDiv = document.createElement('div');
+          imageThumbDiv.setAttribute('class', 'lango-thumb');
+          imageThumb.appendChild(imageThumbDiv);
+          var imageThumbA = document.createElement('a');
+          imageThumbA.setAttribute('href', '#' + imageFileNames[i]);
+          //imageThumbA.setAttribute('class', 'anchor');
+          imageThumbDiv.appendChild(imageThumbA);
+          var imageThumbImg = document.createElement('img');
+          imageThumbImg.setAttribute('src', 'content/' + imageFileNames[i]);
+          imageThumbImg.setAttribute('class', 'lango-thumb');
+          imageThumbA.appendChild(imageThumbImg);
+          
+          artThumbTable.appendChild(imageThumb);
+        }
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -84,52 +118,5 @@
     <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-    <script src="art-data.js"></script>
-    <script>
-        var artContent = document.getElementById('art-content-container');
-        var artThumbTable = document.getElementById('lango-thumb-table');
-
-        for (i = 0; i < imageFileNames.length; i++)
-        {
-          // construct list item
-          var image = document.createElement("img");
-          image.setAttribute('src', 'content/' + imageFileNames[i]);
-          image.setAttribute('class', 'img-responsive');
-          
-          artContent.appendChild(image);
-          artContent.appendChild(document.createElement('br'));
-          //container.innerHTML += '<img src=content/art/"' + xmlNodes.getAttribute('name') + '" class="img-responsive" /><br />';
-          
-          var imageThumb = document.createElement('td');
-          imageThumb.setAttribute('class', 'lango-thumb');
-          var imageThumbDiv = document.createElement('div');
-          imageThumbDiv.setAttribute('class', 'lango-thumb');
-          imageThumb.appendChild(imageThumbDiv);
-          var imageThumbImg = document.createElement('img');
-          imageThumbImg.setAttribute('src', 'content/' + imageFileNames[i]);
-          imageThumbImg.setAttribute('class', 'lango-thumb');
-          imageThumbDiv.appendChild(imageThumbImg);
-          
-          artThumbTable.appendChild(imageThumb);
-        }
-    </script>
   </body>
 </html>
-
-<!--
-  
-          <td class="lango-thumb">     
-            <div width="50px" height="50px" overflow="hidden">
-              <img src="content/rubicon_demo.png" width="100%" height="100%"/>
-            </div>
-          </td>
-          <td class="lango-thumb">     
-            <img src="content/spiderqueen_demo.gif" width="100%" height="100%"/>
-          </td>
-          <td class="lango-thumb">     
-            <div style="width:50px;height:50px;overflow:hidden;">
-          <img src="content/town_portfolio.png" width="200%" height="200%" margin-top="50%" margin-left="50%"/>
-        </div>
-          </td>
-  
-  -->
