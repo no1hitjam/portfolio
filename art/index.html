@@ -71,6 +71,7 @@
     <div class="navbar navbar-default navbar-fixed-bottom navbar-footer" role="navigation">
       <div class="pull-left">
         <table class="lango-thumb" id="lango-thumb-table">
+
         </table>
       </div>
     </div>
@@ -102,14 +103,11 @@
           var imageThumb = document.createElement('td');
           imageThumb.setAttribute('class', 'lango-thumb');
           var imageThumbDiv = document.createElement('div');
-          imageThumbDiv.setAttribute('width', '50px');
-          imageThumbDiv.setAttribute('height', '50px');
-          imageThumbDiv.setAttribute('overflow', 'hidden');
+          imageThumbDiv.setAttribute('class', 'lango-thumb');
           imageThumb.appendChild(imageThumbDiv);
           var imageThumbImg = document.createElement('img');
           imageThumbImg.setAttribute('src', 'content/' + imageFileNames[i]);
-          imageThumbImg.setAttribute('width', '100%');
-          imageThumbImg.setAttribute('height', '100%');
+          imageThumbImg.setAttribute('class', 'lango-thumb');
           imageThumbDiv.appendChild(imageThumbImg);
           
           artThumbTable.appendChild(imageThumb);
@@ -117,3 +115,21 @@
     </script>
   </body>
 </html>
+
+<!--
+  
+          <td class="lango-thumb">     
+            <div width="50px" height="50px" overflow="hidden">
+              <img src="content/rubicon_demo.png" width="100%" height="100%"/>
+            </div>
+          </td>
+          <td class="lango-thumb">     
+            <img src="content/spiderqueen_demo.gif" width="100%" height="100%"/>
+          </td>
+          <td class="lango-thumb">     
+            <div style="width:50px;height:50px;overflow:hidden;">
+          <img src="content/town_portfolio.png" width="200%" height="200%" margin-top="50%" margin-left="50%"/>
+        </div>
+          </td>
+  
+  -->
