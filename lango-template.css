@@ -32,15 +32,15 @@ h3 {
 }
 
 .lango-thumb td {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .lango-thumb div {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   overflow: hidden;
 }
 

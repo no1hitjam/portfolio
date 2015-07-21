@@ -81,13 +81,13 @@
         var artContent = document.getElementById('art-content-container');
         var artThumbTable = document.getElementById('lango-thumb-table');
 
-        for (var i = 0; i < imageFileNames.length; i++)
+        for (var i = 0; i < Arts.length; i++)
         {
           var image = document.createElement("img");
-          image.setAttribute('src', 'content/' + imageFileNames[i]);
+          image.setAttribute('src', 'content/' + Arts[i].name);
           image.setAttribute('class', 'img-responsive');
           var imageAnchor = document.createElement('a');
-          imageAnchor.setAttribute('name', imageFileNames[i]);
+          imageAnchor.setAttribute('name', Arts[i].name);
           imageAnchor.setAttribute('class', 'anchor');
           
           artContent.appendChild(imageAnchor);
@@ -100,11 +100,11 @@
           imageThumbDiv.setAttribute('class', 'lango-thumb');
           imageThumb.appendChild(imageThumbDiv);
           var imageThumbA = document.createElement('a');
-          imageThumbA.setAttribute('href', '#' + imageFileNames[i]);
+          imageThumbA.setAttribute('href', '#' + Arts[i].name);
           //imageThumbA.setAttribute('class', 'anchor');
           imageThumbDiv.appendChild(imageThumbA);
           var imageThumbImg = document.createElement('img');
-          imageThumbImg.setAttribute('src', 'content/' + imageFileNames[i]);
+          imageThumbImg.setAttribute('src', 'content/' + Arts[i].name);
           imageThumbImg.setAttribute('class', 'lango-thumb');
           imageThumbA.appendChild(imageThumbImg);
           

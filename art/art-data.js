@@ -1,15 +1,20 @@
-var imageFileNames = [
-  'rubicon_demo.png',
-  'spiderqueen_demo.gif',
-  'town_portfolio.png',
-  'constructplus.gif',
-  'plateau.png',
-  'bow.gif',
-  'construct.gif',
-  'spiderlair.png',
-  'worm.gif',
-  'displacer.gif',
-  'park2.jpg',
-  'vintaje.png',
-  'canvasser.png'
+function Art (name, attributes) {
+  this.name = name;
+  this.attributes = attributes
+}
+
+var Arts = [
+  new Art('rubicon_demo.png', ['pixel']),
+  new Art('spiderqueen_demo.gif', ['pixel', 'animated']),
+  new Art('town_portfolio.png', ['pixel']),
+  new Art('constructplus.gif', ['pixel', 'animated']),
+  new Art('plateau.png', ['pixel']),
+  new Art('bow.gif', ['pixel', 'animated']),
+  new Art('construct.gif', ['pixel', 'animated']),
+  new Art('spiderlair.png', ['pixel']),
+  new Art('worm.gif', ['pixel', 'animated']),
+  new Art('displacer.gif', ['pixel', 'animated']),
+  new Art('park2.jpg', ['pixel']),
+  new Art('vintaje.png', ['pixel']),
+  new Art('canvasser.png', [])
 ]
