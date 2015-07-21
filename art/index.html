@@ -105,9 +105,11 @@
         var artContent = document.getElementById('art-content-container');
         for (i = 0; i < xmlNodes.length; i++)
         {
+          var imageName = xmlNodes[i].getElementsByTagName('name')[0];
+          alert(imageName);
           // construct list item
           var image = document.createElement("img");
-          image.setAttribute('src', 'content/' + xmlNodes.getAttribute(name));
+          image.setAttribute('src', 'content/' + imageName);
           image.setAttribute('class', 'img-responsive');
           
           artContent.appendChild(image);
@@ -122,12 +124,11 @@
           imageThumbDiv.setAttribute('overflow', 'hidden');
           imageThumb.appendChild(imageThumbDiv);
           var imageThumbImg = document.createElement('img');
-          imageThumbImg.setAttribute('src', 'content/' + xmlNodes.name);
+          imageThumbImg.setAttribute('src', 'content/' + imageName);
           imageThumbImg.setAttribute('width', '100%');
           imageThumbImg.setAttribute('height', '100%');
           document.getElementById('lango-thumb-table').appendChild(imageThumb);
         }
-        alert('test');
     </script>
   </body>
 </html>

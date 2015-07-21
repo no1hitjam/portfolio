@@ -9,8 +9,6 @@ function loadXML(filename) {
     xhttp.overrideMimeType('text/xml');
 
     xhttp.open("GET", filename, false);
-    alert('test1');
     xhttp.send(null);
-    alert('test2');
     return xhttp.responseXML;
 }
