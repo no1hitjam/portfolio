@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Jackson Lango - Art</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="lango-template.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/xmlloader.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-art navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Jackson Lango</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="art.html">Art</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="sketchbook.html">Sketchbook</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </nav>
+
+    <!-- art content -->
+    <div class="container">
+      <h1>Art</h1>
+      <!--<div class="checkbox">
+        <label>
+          <input type="checkbox" checked="true">
+          Digital
+        </label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <label>
+          <input type="checkbox" checked="true">
+          Traditional
+        </label>
+      </div>-->
+      <br />
+      <div class="art-content">
+        <img src="content/art/rubicon_demo.png" class="img-responsive"><br />
+        <img src="content/art/spiderqueen_demo.gif" class="img-responsive"><br />
+        <img src="content/art/town_portfolio.png" class="img-responsive"><br />
+      </div>
+    </div><!-- /.container -->
+
+    <!-- footer with thumbnails -->
+    <div class="navbar navbar-default navbar-fixed-bottom navbar-footer" role="navigation">
+      <div class="pull-left">
+        <table class="lango-thumb">
+          <td class="lango-thumb">     
+            <div width="50px" height="50px" overflow="hidden">
+              <img src="content/art/rubicon_demo.png" width="100%" height="100%"/>
+            </div>
+          </td>
+          <td class="lango-thumb">     
+            <img src="content/art/spiderqueen_demo.gif" width="100%" height="100%"/>
+          </td>
+          <td class="lango-thumb">     
+            <div style="width:50px;height:50px;overflow:hidden;">
+          <img src="content/art/town_portfolio.png" width="200%" height="200%" margin-top="50%" margin-left="50%"/>
+        </div>
+          </td>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <!-- <script>
+        var xmlDoc = loadXML('./content/art.xml');
+        alert('maintest');
+        var xmlNodes = xmlDoc.documentElement.childNodes;
+        var container = document.getElementById('container');
+        for (i = 0; i < xmlNodes.length; i++)
+        {
+          // construct list item
+          container.innerHTML += '<img src=content/art/"' + xmlNodes.getAttribute('name') + '" class="img-responsive" /><br />';
+        }
+        alert('test');
+    </script> -->
+  </body>
+</html>

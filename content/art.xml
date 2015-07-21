@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<image>
+		<name>rubicon_demo.png</name>
+		<attributes>
+			<att>pixel</att>
+		</attributes>
+	</image>
+	<image>
+		<name>spiderqueen_demo.gif</name>
+	</image>
+	<image name="spiderqueen_demo.png"></image>
+</data>

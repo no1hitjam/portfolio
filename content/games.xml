@@ -1,0 +1,18 @@
+<data>
+	<game>
+		<name>Canvasser</name>
+		<genre>Strategy</genre>
+		<released>2013</released>
+		<language>Actionscript 3</language>
+		<credits>
+			<credit
+				title="Designer, Artist, Programmer, Writer, Composer"
+				credit="Jackson Lango"
+			/>
+		</credits>
+		<description>
+			Grab your clipboard and brush up on your social skills: It’s time to raise money on the streets for charity! Canvasser is a persuasion game, and it’s all about getting the most donations possible before the day ends. Can you sustain interest, trust, and get your town to care about Evergreen Forest before it’s too late?
+		</description>
+		<screenshots>4</screenshots>
+	</game>
+</data>
