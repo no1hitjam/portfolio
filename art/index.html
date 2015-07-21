@@ -24,6 +24,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="../js/xmlloader.js"></script>
   </head>
 
   <body>
@@ -63,9 +64,6 @@
       </div>-->
       <br />
       <div class="art-content" id="art-content-container">
-        <img src="content/rubicon_demo.png" class="img-responsive"><br />
-        <img src="content/spiderqueen_demo.gif" class="img-responsive"><br />
-        <img src="content/town_portfolio.png" class="img-responsive"><br />
       </div>
     </div><!-- /.container -->
 
@@ -73,8 +71,19 @@
     <div class="navbar navbar-default navbar-fixed-bottom navbar-footer" role="navigation">
       <div class="pull-left">
         <table class="lango-thumb" id="lango-thumb-table">
-          
-         
+          <td class="lango-thumb">     
+            <div width="50px" height="50px" overflow="hidden">
+              <img src="content/rubicon_demo.png" width="100%" height="100%"/>
+            </div>
+          </td>
+          <td class="lango-thumb">     
+            <img src="content/spiderqueen_demo.gif" width="100%" height="100%"/>
+          </td>
+          <td class="lango-thumb">     
+            <div style="width:50px;height:50px;overflow:hidden;">
+          <img src="content/town_portfolio.png" width="200%" height="200%" margin-top="50%" margin-left="50%"/>
+        </div>
+          </td>
         </table>
       </div>
     </div>
@@ -90,7 +99,8 @@
     <script src="art-data.js"></script>
     <script>
         var artContent = document.getElementById('art-content-container');
-        
+        var artThumbTable = document.getElementById('lango-thumb-table').appendChild(imageThumb);
+
         for (i = 0; i < imageFileNames.length; i++)
         {
           // construct list item
@@ -113,7 +123,9 @@
           imageThumbImg.setAttribute('src', 'content/' + imageFileNames[i]);
           imageThumbImg.setAttribute('width', '100%');
           imageThumbImg.setAttribute('height', '100%');
-          document.getElementById('lango-thumb-table').appendChild(imageThumb);
+          imageThumbDiv.appendChild(imageThumbImg);
+          
+          artThumbTable.appendChild(imageThumb);
         }
     </script>
   </body>
