@@ -66,8 +66,12 @@ h3 {
   border-color: #FFE800;
 }
 .navbar-games {
-  border-color: #03CFFF;
+  border-color: #0793FF;
 }
+.navbar-sketchbook {
+  border-color: #FFAD09;
+}
+
 .navbar-footer {
   background-color: #fff;
   border: 0px;
@@ -104,9 +108,13 @@ h3 {
 .navbar-games .navbar-nav > .active > a,
 .navbar-games .navbar-nav > .active > a:hover,
 .navbar-games .navbar-nav > .active > a:focus {
-  background-color: #03CFFF;
+  background-color: #0793FF;
 }
-
+.navbar-sketchbook .navbar-nav > .active > a,
+.navbar-sketchbook .navbar-nav > .active > a:hover,
+.navbar-sketchbook .navbar-nav > .active > a:focus {
+  background-color: #FFAD09;
+}
 
 
 .navbar-brand {
