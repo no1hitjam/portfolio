@@ -1,0 +1,8 @@
+DEFINITELY
+- fix It's A Monster screenshot sizes
+- add sketchbook page
+- revisit about me description
+
+MAYBE?
+- add light version of sketches to background on every page
+- add clock island to games
