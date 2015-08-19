@@ -64,12 +64,15 @@ h3 {
 }
 .navbar-art {
   border-color: #FFE800;
+  -webkit-animation:navbar-art-border 40s infinite;
 }
 .navbar-games {
-  border-color: #0793FF;
+  border-color: #F084FF;
+  -webkit-animation:navbar-games-border 40s infinite;
 }
 .navbar-sketchbook {
-  border-color: #FFAD09;
+  border-color: #79F046;
+  -webkit-animation:navbar-sketch-border 40s infinite;
 }
 
 .navbar-footer {
@@ -104,16 +107,66 @@ h3 {
 .navbar-art .navbar-nav > .active > a:hover,
 .navbar-art .navbar-nav > .active > a:focus {
   background-color: #EDD90B;
+  -webkit-animation:navbar-art-bg 40s infinite;
 }
 .navbar-games .navbar-nav > .active > a,
 .navbar-games .navbar-nav > .active > a:hover,
 .navbar-games .navbar-nav > .active > a:focus {
-  background-color: #0793FF;
+  background-color: #F084FF;
+  -webkit-animation:navbar-games-bg 40s infinite;
 }
 .navbar-sketchbook .navbar-nav > .active > a,
 .navbar-sketchbook .navbar-nav > .active > a:hover,
 .navbar-sketchbook .navbar-nav > .active > a:focus {
-  background-color: #FFAD09;
+  background-color: #79F046;
+  -webkit-animation:navbar-sketch-bg 40s infinite;
+}
+
+@-webkit-keyframes navbar-art-bg {
+  0% {background-color: #EDD90B;}
+  25% {background-color: #FAA93D;}
+  50% {background-color: #FB8146;}
+  75% {background-color: #F4BD55;}
+  100% {background-color: #EDD90B;}
+}
+@-webkit-keyframes navbar-art-border {
+  0% {border-color: #EDD90B;}
+  25% {border-color: #FAA93D;}
+  50% {border-color: #FB8146;}
+  75% {border-color: #F4BD55;}
+  100% {border-color: #EDD90B;}
+}
+
+@-webkit-keyframes navbar-games-bg {
+  0% {background-color: #F084FF;}
+  25% {background-color: #BA9FFF;}
+  50% {background-color: #808CFF;}
+  75% {background-color: #B87EFF;}
+  100% {background-color: #F084FF;}
+}
+
+@-webkit-keyframes navbar-games-border {
+  0% {border-color: #F084FF;}
+  25% {border-color: #BA9FFF;}
+  50% {border-color: #808CFF;}
+  75% {border-color: #B87EFF;}
+  100% {border-color: #F084FF;}
+}
+
+@-webkit-keyframes navbar-sketch-bg {
+  0% {background-color: #79F046;}
+  25% {background-color: #ABF35A;}
+  50% {background-color: #6CDF35;}
+  75% {background-color: #33DD51;}
+  100% {background-color: #79F046;}
+}
+
+@-webkit-keyframes navbar-sketch-border {
+  0% {border-color: #79F046;}
+  25% {border-color: #ABF35A;}
+  50% {border-color: #6CDF35;}
+  75% {border-color: #33DD51;}
+  100% {border-color: #79F046;}
 }
 
 
