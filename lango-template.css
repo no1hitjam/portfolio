@@ -5,8 +5,9 @@ body {
   padding-top: 50px;
   background-color: #fff;
   font-family: 'Delius', cursive;
+  background-repeat: no-repeat;
+  background-position: right top;
 }
-
 
 h1 {
   font-family: 'Zeyada', cursive;
