@@ -98,10 +98,12 @@
     </div><!-- /.container -->
 
     <script>
-    var totalBGs = 6
-    var randomNum = Math.ceil(Math.random() * totalBGs);
-    //document.body.setAttribute('background-image', 'url(sketchbook/content/home-bg/bg' + randomNum + '.jpg)');
-    document.body.style.backgroundImage = 'url(sketchbook/content/home-bg/bg' + randomNum + '.jpg)'
+      if (window.innerWidth > 900) {
+        var totalBGs = 6
+        var randomNum = Math.ceil(Math.random() * totalBGs);
+        //document.body.setAttribute('background-image', 'url(sketchbook/content/home-bg/bg' + randomNum + '.jpg)');
+        document.body.style.backgroundImage = 'url(sketchbook/content/home-bg/bg' + randomNum + '.jpg)'
+      }
     </script>
     
     <!-- Bootstrap core JavaScript
