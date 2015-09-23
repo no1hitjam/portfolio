@@ -4,6 +4,7 @@ function Art (name, attributes) {
 }
 
 var Arts = [
+  new Art('demons.png', ['pixel']),
   new Art('rubicon_demo.png', ['pixel']),
   new Art('spiderqueen_demo.gif', ['pixel', 'animated']),
   new Art('town_portfolio.png', ['pixel']),
